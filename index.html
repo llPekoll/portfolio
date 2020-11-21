@@ -8,6 +8,7 @@
     <title>Yohann Mepa Portfolio</title>
     <link rel="stylesheet" href="assets/vendors/animate.css/animate.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/modal-video.min.css">
     <script src="assets/vendors/jquery/jquery.min.js"></script>
     <script src="assets/js/loader.js"></script>
 </head>
@@ -48,7 +49,7 @@
                                 <h1 class="carousel-item-title" data-animation="animated fadeInRight" data-number="01"><span>Yohann Mepa <br/>CTO</span></h1>
                                 <p class="carousel-item-description" data-animation="animated fadeInRight">Building Tipsmeee From scratch a Market Place Web App.</p>
                                 <a href="https://tipsmeee.com" class="carousel-item-link link-hover-fx" data-animation="animated fadeInRight">Tipsmeee</a>
-
+                                <button class="js-video-button" data-video-id='156682863' data-channel="vimeo">Vimeo</button>
                             </div>
                             <div class="col-md-6">
                                 <img src="assets/images/tips.png" alt="Remarkable Digital Products" class="img-fluid w-100 rounded" width="372px">
@@ -155,11 +156,12 @@
     <section class="projects-section hiro-section" id="works">
         <div class="container">
             <div class="row">
-                <div class="col-md-6wow fadeInUp">
+                <div class="col-md-6wow fadeInUp " style="max-width: 50%;">
                     <div class="project-card wow fadeInUp">
                         <img src="assets/images/Works4.png" alt="Project" class="project-thumbnail">
                         <h6 class="project-title">Tipsmeee.com</h6>
-                        <p class="Project-category">Branding system / Motion design </p>
+                        <p class="Project-category" >Tipsmeee is a cloud web app in the Finetech industry, as a CTO, I've done the architecture of the project, functional analysis, the documentation, the  development, code review, and deployment on the cloud. Tipsmeee is a Multilang Website, an Inboard module for more than 10 countries, a dedicated payment page for more than 10 currencies, a dasboard, it as a group feature for spread the money to multiple users and much more.
+                        </p>
                     </div>
                     <div class="project-card wow fadeInUp">
                         <img src="assets/images/Works2.png" alt="Project" class="project-thumbnail">
@@ -219,6 +221,16 @@
     <script>
         new WOW().init();
     </script>
+    
+    <script src="assets/js/jquery-modal-video.min.js"></script>
+	<script>
+		$(".js-video-button").modalVideo({
+			youtube:{
+				controls:0,
+				nocookie: true
+			}
+		});
+	</script>
 </body>
 
 </html>
